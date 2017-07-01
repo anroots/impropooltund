@@ -1,6 +1,72 @@
 apiVersion: v1
 items:
 - apiVersion: v1
+  kind: Route
+  metadata:
+    annotations:
+      kubernetes.io/tls-acme: "true"
+    name: pooltund
+  spec:
+    host: pooltund.improv.ee
+    port:
+      targetPort: webserver
+    tls:
+      certificate:
+      insecureEdgeTerminationPolicy: Redirect
+      key:
+      termination: edge
+    to:
+      kind: Service
+      name: pooltund
+      weight: 100
+    wildcardPolicy: None
+  status:
+    ingress:
+    - conditions:
+      - lastTransitionTime: 2017-05-27T10:42:05Z
+        status: "True"
+        type: Admitted
+      host: pooltund.improv.ee
+      routerName: router
+      wildcardPolicy: None
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    annotations:
+      pv.kubernetes.io/bind-completed: "yes"
+      pv.kubernetes.io/bound-by-controller: "yes"
+    creationTimestamp: null
+    name: cdn-pooltund
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      requests:
+        storage: 50G
+    volumeName: cdn-pooltund
+  status: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftWebConsole
+    creationTimestamp: null
+    labels:
+      app: pooltund
+    name: pooltund
+  spec:
+    ports:
+    - name: webserver
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      deploymentconfig: pooltund
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
   kind: DeploymentConfig
   metadata:
     annotations:
@@ -35,7 +101,7 @@ items:
           deploymentconfig: pooltund
       spec:
         containers:
-        - image: anroots/pooltund.improv.ee@sha256:d2523c2fe6c4b3139e29e7f7fc385d385da88b21c7567f3431a83cf822b03c9f
+        - image: anroots/pooltund.improv.ee@sha256:47a05c21e7db476a55ec422087a11cf5a31a34ade961ee9bccca225b865a648f
           imagePullPolicy: Always
           livenessProbe:
             failureThreshold: 3
@@ -67,10 +133,18 @@ items:
               cpu: 50m
               memory: 20Mi
           terminationMessagePath: /dev/termination-log
+          volumeMounts:
+          - mountPath: /usr/share/nginx/html/mp3
+            name: cdn-pooltund
+            readOnly: true
         dnsPolicy: ClusterFirst
         restartPolicy: Always
         securityContext: {}
         terminationGracePeriodSeconds: 30
+        volumes:
+        - name: cdn-pooltund
+          persistentVolumeClaim:
+            claimName: cdn-pooltund
     test: false
     triggers:
     - type: ConfigChange
@@ -90,74 +164,5 @@ items:
     replicas: 0
     unavailableReplicas: 0
     updatedReplicas: 0
-- apiVersion: v1
-  kind: Service
-  metadata:
-    annotations:
-      openshift.io/generated-by: OpenShiftWebConsole
-    creationTimestamp: null
-    labels:
-      app: pooltund
-    name: pooltund
-  spec:
-    ports:
-    - name: webserver
-      port: 8080
-      protocol: TCP
-      targetPort: 8080
-    selector:
-      deploymentconfig: pooltund
-    sessionAffinity: None
-    type: ClusterIP
-  status:
-    loadBalancer: {}
-- apiVersion: v1
-  kind: Route
-  metadata:
-    creationTimestamp: null
-    name: pooltund
-  spec:
-    host: pooltund.improv.ee
-    port:
-      targetPort: webserver
-    to:
-      kind: Service
-      name: pooltund
-      weight: 100
-    wildcardPolicy: None
-  status:
-    ingress:
-    - conditions:
-      - lastTransitionTime: 2017-05-27T10:42:05Z
-        status: "True"
-        type: Admitted
-      host: pooltund.improv.ee
-      routerName: router
-      wildcardPolicy: None
-- apiVersion: v1
-  kind: ImageStream
-  metadata:
-    annotations:
-      openshift.io/image.dockerRepositoryCheck: 2017-05-27T10:41:08Z
-    creationTimestamp: null
-    generation: 3
-    labels:
-      app: pooltund
-    name: pooltund
-  spec:
-    tags:
-    - annotations:
-        openshift.io/generated-by: OpenShiftWebConsole
-        openshift.io/imported-from: anroots/pooltund.improv.ee
-      from:
-        kind: DockerImage
-        name: 172.30.192.131:5000/improv-ee/pooltund:latest
-      generation: 3
-      importPolicy: {}
-      name: latest
-      referencePolicy:
-        type: Source
-  status:
-    dockerImageRepository: ""
 kind: List
 metadata: {}
