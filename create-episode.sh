@@ -40,8 +40,8 @@ function id3tag {
 	eyeD3 --year `date +"%Y"` $1
 	eyeD3 --comment="et:Impropooltund:https://pooltund.improv.ee" $1
 	eyeD3 --add-image ./images/cover.jpg:FRONT_COVER $1
-	eyeD3 --set-url-frame WOAF:"https://pooltund.improv.ee/osad/$TRACK" $1
-	eyeD3 --set-url-frame WPUB:'https://pooltund.improv.ee' $1
+	eyeD3 --url-frame WOAF:"https://pooltund.improv.ee/osad/$TRACK" $1
+	eyeD3 --url-frame WPUB:'https://pooltund.improv.ee' $1
 }
 
 

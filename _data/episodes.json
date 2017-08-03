@@ -955,7 +955,38 @@
       "subtitle": "Impro Filosoofilised Minutid",
       "publicationDate": "2017-03-15T09:00:00+00:00",
       "summary": "Räägime heli ja valguse kasutamisest impros, impro publikust või selle puudumisest, festivalidest ja seal käimisest ning sellest, milline näeb välja ideaalne impro lava. Saates Ando Roots, Rauno Meronen, Toivo Värbu, Enel Murakas ja Liis Tammjärv."
+    },
+        {
+      "duration": "31:44.000",
+      "downloads": [
+        {
+          "assetTitle": "MP3 Audio (192 Kbps .mp3)",
+          "size": 45727608,
+          "url": "https://pooltund.improv.ee/mp3/2017/2017-08-03-Impropooltund-28-Suvepuhkuselt-Tagasi.mp3",
+          "directAccess": "https://pooltund.improv.ee/mp3/2017/2017-08-03-Impropooltund-28-Suvepuhkuselt-Tagasi.mp3",
+          "downloadUrl": "https://pooltund.improv.ee/mp3/2017/2017-08-03-Impropooltund-28-Suvepuhkuselt-Tagasi.mp3"
+        },
+        {
+          "assetTitle": "MPEG-4 Audio (128 Kbps .m4a)",
+          "size": 33118076,
+          "url": "https://pooltund.improv.ee/mp3/2017/2017-08-03-Impropooltund-28-Suvepuhkuselt-Tagasi.m4a",
+          "directAccess": "https://pooltund.improv.ee/mp3/2017/2017-08-03-Impropooltund-28-Suvepuhkuselt-Tagasi.m4a",
+          "downloadUrl": "https://pooltund.improv.ee/mp3/2017/2017-08-03-Impropooltund-28-Suvepuhkuselt-Tagasi.m4a"
+        }
+      ],
+      "chapters": [
+        {
+          "start": "00:00:00.000",
+          "title": "Sissejuhatus"
+        }
+      ],
+      "title": "Episood #28",
+      "permalink": "https://pooltund.improv.ee/osad/28/",
+      "subtitle": "Suvepuhkuselt Tagasi",
+      "publicationDate": "2017-08-03T20:30:00+00:00",
+      "summary": "Impropooltund on suvepuhkuselt tagasi, päev enne Testivali algust. Jagame tõestisündinud lugusid oma elust ning improviseerime neist stseene. Saates Ando Roots, Timo Talvik, Janika Hirvelaan ja Liis Tammjärv."
     }
+
 
 
   ]
