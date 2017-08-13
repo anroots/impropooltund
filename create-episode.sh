@@ -37,11 +37,11 @@ function id3tag {
 	eyeD3 --title "$TITLE" $1
 	eyeD3 --track "$TRACK" $1
 	eyeD3 --genre "$GENRE" $1
-	eyeD3 --year `date +"%Y"` $1
-	eyeD3 --comment="et:Impropooltund:https://pooltund.improv.ee" $1
+	eyeD3 -Y `date +"%Y"` $1
+	eyeD3 --add-comment="https://pooltund.improv.ee" $1
 	eyeD3 --add-image ./images/cover.jpg:FRONT_COVER $1
-	eyeD3 --url-frame WOAF:"https://pooltund.improv.ee/osad/$TRACK" $1
-	eyeD3 --url-frame WPUB:'https://pooltund.improv.ee' $1
+	eyeD3 --url-frame "WOAF:https\://pooltund.improv.ee/osad/$TRACK" $1
+	eyeD3 --url-frame "WPUB:https\://pooltund.improv.ee" $1
 }
 
 
