@@ -48,7 +48,7 @@ function id3tag {
 echo "Creating a new podcast episode - provide some metadata."
 echo ""
 
-echo "Episode Title: "
+echo 'Episode Title (Minu Relv On Minu Keha): '
 read TITLE
 TITLE_SAFE=`echo $TITLE | tr ' ' '-'`
 echo ""

@@ -986,7 +986,7 @@
       "publicationDate": "2017-08-03T20:30:00+00:00",
       "summary": "Impropooltund on suvepuhkuselt tagasi, päev enne Testivali algust. Jagame tõestisündinud lugusid oma elust ning improviseerime neist stseene. Saates Ando Roots, Timo Talvik, Janika Hirvelaan ja Liis Tammjärv."
     },
-        {
+    {
       "duration": "30:01.000",
       "downloads": [
         {
@@ -1015,8 +1015,37 @@
       "subtitle": "Minu Relv on Minu Keha",
       "publicationDate": "2017-08-17T09:00:00+00:00",
       "summary": "Improviseerijad võtavad appi helilise tausta ning viivad kuulaja avamerele, Jedi rüütlite templisse ning metsikusse läände. Saates Ando Roots, Timo Talvik, Toivo Värbu ja Enel Murakas."
+    },
+    {
+      "duration": "31:31.000",
+      "downloads": [
+        {
+          "assetTitle": "MP3 Audio (192 Kbps .mp3)",
+          "size": 45416642,
+          "url": "https://pooltund.improv.ee/mp3/2017/2017-08-30-Impropooltund-30-Testival-Special-Q-and-A.mp3",
+          "directAccess": "https://pooltund.improv.ee/mp3/2017/2017-08-30-Impropooltund-30-Testival-Special-Q-and-A.mp3",
+          "downloadUrl": "https://pooltund.improv.ee/mp3/2017/2017-08-30-Impropooltund-30-Testival-Special-Q-and-A.mp3"
+        },
+        {
+          "assetTitle": "MPEG-4 Audio (128 Kbps .m4a)",
+          "size": 32225544,
+          "url": "https://pooltund.improv.ee/mp3/2017/2017-08-30-Impropooltund-30-Testival-Special-Q-and-A.m4a",
+          "directAccess": "https://pooltund.improv.ee/mp3/2017/2017-08-30-Impropooltund-30-Testival-Special-Q-and-A.m4a",
+          "downloadUrl": "https://pooltund.improv.ee/mp3/2017/2017-08-30-Impropooltund-30-Testival-Special-Q-and-A.m4a"
+        }
+      ],
+      "chapters": [
+        {
+          "start": "00:00:00.000",
+          "title": "Sissejuhatus"
+        }
+      ],
+      "title": "Episode #30",
+      "permalink": "https://pooltund.improv.ee/osad/30/",
+      "subtitle": "Testival Special Q&A",
+      "publicationDate": "2017-08-30T18:00:00+00:00",
+      "summary": "We record live from Testival, the first Ruutu10 improv festival and 2nd improv festival in Estonia. I am joined by Mr Trent Pancy, Toivo Värbu, Jürmo Mehine and the audience to talk about improv and answer audience questions."
     }
-
 
 
   ]
