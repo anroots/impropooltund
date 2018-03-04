@@ -7,7 +7,7 @@ rvm:
 
 before_install:
   - bundle install
-  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - cd assets && npm install -g bower && bower install && cd ..
 
 script:
