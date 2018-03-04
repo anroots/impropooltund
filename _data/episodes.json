@@ -1045,6 +1045,36 @@
       "subtitle": "Testival Special Q&A",
       "publicationDate": "2017-08-30T18:00:00+00:00",
       "summary": "We record live from Testival, the first Ruutu10 improv festival and 2nd improv festival in Estonia. I am joined by Mr Trent Pancy, Toivo Värbu, Jürmo Mehine and the audience to talk about improv and answer audience questions."
+    },
+        {
+      "duration": "29:12.000",
+      "downloads": [
+        {
+          "assetTitle": "MP3 Audio (192 Kbps .mp3)",
+          "size": 56102444,
+          "url": "https://pooltund.improv.ee/mp3/2018/2018-03-05-Impropooltund-31-Räpipooltund.mp3",
+          "directAccess": "https://pooltund.improv.ee/mp3/2018/2018-03-05-Impropooltund-31-Räpipooltund.mp3",
+          "downloadUrl": "https://pooltund.improv.ee/mp3/2018/2018-03-05-Impropooltund-31-Räpipooltund.mp3"
+        },
+        {
+          "assetTitle": "MPEG-4 Audio (128 Kbps .m4a)",
+          "size": 28324098,
+          "url": "https://pooltund.improv.ee/mp3/2018/2018-03-05-Impropooltund-31-Räpipooltund.m4a",
+          "directAccess": "https://pooltund.improv.ee/mp3/2018/2018-03-05-Impropooltund-31-Räpipooltund.m4a",
+          "downloadUrl": "https://pooltund.improv.ee/mp3/2018/2018-03-05-Impropooltund-31-Räpipooltund.m4a"
+        }
+      ],
+      "chapters": [
+        {
+          "start": "00:00:00.000",
+          "title": "Sissejuhatus"
+        }
+      ],
+      "title": "Episood #31",
+      "permalink": "https://pooltund.improv.ee/osad/31/",
+      "subtitle": "Räpipooltund",
+      "publicationDate": "2018-03-05T09:00:00+00:00",
+      "summary": "Räpipooltunnis on saatekülalisteks MC Toivo&Rauno, vastates kuulajaküsimustele filosoofilise improviseeritud räpiga. Räpipooltunni avalik lindistus toimub Ruutu10 improstuudios. Kuulajaküsimusi saab esitada Facebookis (Impropooltund)."
     }
 
 
