@@ -61,7 +61,7 @@ echo "Episode Number: "
 read TRACK
 
 echo ""
-echo "Publish Date (2017-02-21): "
+echo "Publish Date (2018-02-21): "
 read PUBLISH_DATE
 
 

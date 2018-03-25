@@ -1075,8 +1075,37 @@
       "subtitle": "Räpipooltund",
       "publicationDate": "2018-03-05T09:00:00+00:00",
       "summary": "Räpipooltunnis on saatekülalisteks MC Toivo&Rauno, vastates kuulajaküsimustele filosoofilise improviseeritud räpiga. Räpipooltunni avalik lindistus toimub Ruutu10 improstuudios. Kuulajaküsimusi saab esitada Facebookis (Impropooltund)."
+    },
+       {
+      "duration": "32:24.000",
+      "downloads": [
+        {
+          "assetTitle": "MP3 Audio (192 Kbps .mp3)",
+          "size": 62264834,
+          "url": "https://pooltund.improv.ee/mp3/2018/2018-03-26-Impropooltund-32-Räpipooltund.mp3",
+          "directAccess": "https://pooltund.improv.ee/mp3/2018/2018-03-26-Impropooltund-32-Räpipooltund.mp3",
+          "downloadUrl": "https://pooltund.improv.ee/mp3/2018/2018-03-26-Impropooltund-32-Räpipooltund.mp3"
+        },
+        {
+          "assetTitle": "MPEG-4 Audio (128 Kbps .m4a)",
+          "size": 32706449,
+          "url": "https://pooltund.improv.ee/mp3/2018/2018-03-26-Impropooltund-32-Räpipooltund.m4a",
+          "directAccess": "https://pooltund.improv.ee/mp3/2018/2018-03-26-Impropooltund-32-Räpipooltund.m4a",
+          "downloadUrl": "https://pooltund.improv.ee/mp3/2018/2018-03-26-Impropooltund-32-Räpipooltund.m4a"
+        }
+      ],
+      "chapters": [
+        {
+          "start": "00:00:00.000",
+          "title": "Sissejuhatus"
+        }
+      ],
+      "title": "Episood #32",
+      "permalink": "https://pooltund.improv.ee/osad/32/",
+      "subtitle": "Räpipooltund",
+      "publicationDate": "2018-03-26T01:00:00+00:00",
+      "summary": "Räpipooltunnis on saatekülalisteks MC Toivo&Rauno, vastates kuulajaküsimustele filosoofilise improviseeritud räpiga. Räpipooltunni avalik lindistus toimub Ruutu10 improstuudios. Kuulajaküsimusi saab esitada Facebookis (Impropooltund)."
     }
-
 
   ]
 }
